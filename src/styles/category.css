@@ -1,0 +1,16 @@
+.catmain{
+ @apply flex  justify-center items-center lg:flex-row flex-wrap mt-1;
+}
+.catdiv{
+ @apply flex flex-col h-[65px] w-[60px] gap-2 lg:h-[150px] lg:mb-7 items-center lg:w-56 hover:scale-105 transform duration-150;
+}
+.catdiv .lsc{
+    @apply lg:h-[150px]  lg:w-[150px] bg-cover lg:block hidden;
+}
+.catdiv .ssc{
+    @apply h-[50px]  w-[50px] bg-cover lg:hidden block;
+}
+
+.catdiv .line{
+    @apply lg:-mt-6 font-light text-[10px] lg:text-lg lg:font-bold lg:block text-black lg:text-white;
+}

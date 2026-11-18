@@ -1,0 +1,31 @@
+.cartmain{
+    @apply lg:mx-20 lg:h-[700px] mt-24 mb-10;
+}
+.tabhead{
+    @apply lg:p-2 lg:m-2 px-2 lg:px-4 border flex flex-row font-semibold items-center justify-between border-sky-100 rounded-md;
+}
+.tabrow{
+    @apply p-1 lg:p-2 m-2 border flex flex-row  items-center justify-between border-sky-100 rounded-md;
+}
+.tabimg{
+    @apply lg:w-[80px] w-10 h-10 lg:h-[80px] object-cover rounded-md;
+}
+
+.colordiv{
+    @apply label text-sm font-semibold text-white w-12 h-8 cursor-pointer border-[1px] rounded-lg transition duration-700 ease-in-out hover:scale-105 flex items-center justify-center ;
+}
+.sizediv{
+    @apply text-xs lg:text-sm font-semibold label lg:w-12 max-w-fit h-4 lg:h-8 cursor-pointer border-[1px] rounded-lg transition duration-700 ease-in-out hover:scale-105 flex items-center justify-center ;
+}
+.selectdiv{
+    @apply label w-20 h-8 cursor-pointer border-[1px] rounded-lg p-0 m-0 transition duration-700 ease-in-out hover:scale-105 flex items-center justify-center ;
+}
+.pricediv{
+    @apply mb-4 h-[60px] w-[140px] bg-black text-white border-[1px] rounded-lg flex flex-row items-start p-1 ;
+}
+.pd{
+    @apply p-2 m-2 border flex flex-row  items-center justify-end border-sky-100 rounded-md ;
+}
+.checkout{
+    @apply  h-10 w-24 border-[1px] rounded-lg hover:bg-black  transition duration-700 ease-in-out hover:scale-105 hover:text-white;
+}

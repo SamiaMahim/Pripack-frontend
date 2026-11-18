@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  /* Main action button: same gradient as the Sign In button. */
+  .btn-gradient {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold text-white shadow-md
+      bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-50% to-emerald-500 to-90%
+      hover:scale-105 active:scale-95 transition-all duration-200
+      disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100;
+  }
+
+  /* Round prev/next arrow over a product carousel. */
+  .carousel-arrow {
+    @apply absolute top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center
+      bg-white/95 text-teal-600 border border-teal-200 shadow-md backdrop-blur
+      hover:bg-teal-500 hover:text-white hover:border-teal-500 hover:shadow-lg active:scale-95 transition-all duration-200;
+  }
+
+  /* Simple button: same style as the Add to Cart button. */
+  .btn-simple {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold shadow-md
+      border-2 border-teal-500 text-teal-600 bg-white
+      hover:bg-teal-500 hover:text-white hover:border-teal-600 hover:scale-105 active:scale-95 transition-all duration-200
+      disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-white disabled:hover:text-teal-600;
+  }
+}
+
+/* "Choose File" part of file inputs: Add to Cart style instead of daisyUI's dark grey. */
+input[type="file"]::file-selector-button {
+  @apply bg-white text-teal-600 border-0 border-r-2 border-teal-500 font-semibold cursor-pointer transition-colors duration-200;
+}
+input[type="file"]:hover::file-selector-button {
+  @apply bg-teal-500 text-white;
+}
+input[type="file"].file-input {
+  @apply border-2 border-teal-500;
+}

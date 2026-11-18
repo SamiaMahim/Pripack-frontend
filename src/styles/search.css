@@ -1,0 +1,94 @@
+.srmain{
+  @apply  w-[700px]  flex-col  ;
+}
+
+.srone{
+    @apply lg:flex flex-row items-center justify-center hidden;
+}
+.srdiv{
+    @apply form-control w-[550px]  lg:flex  hidden;
+}
+.srdiv input{
+    @apply p-2 mt-2 rounded-md  w-full border-[1px] bg-white  md:w-auto ;
+}
+
+.srone button{
+    @apply  mt-2 w-[60px]  md:w-auto;
+}
+.srone button img{
+    @apply h-6 w-6 ;
+}
+.srbot {
+    @apply absolute left-0 top-full z-20 w-full max-h-[70vh] overflow-y-auto flex-col lg:flex hidden border-[1px] bg-white rounded-md shadow-md;
+}
+
+.srbotm{
+    @apply p-2  flex flex-row w-full justify-between items-center hover:bg-cyan-50 border-sky-100 border-[1px];
+}
+.srid{
+    @apply flex flex-row;
+}
+
+.sri{
+    @apply mr-2;
+}
+.sri img{
+    @apply w-[50px] h-[50px] object-cover;
+}
+.catp{
+    @apply flex flex-col justify-end items-end;
+}
+.catp p{
+    @apply text-xs;
+}
+
+.msrmain{
+    @apply w-full relative flex-col flex lg:hidden  ;
+  }
+  
+  .msrone{
+      @apply flex lg:hidden flex-row items-center justify-center ;
+  }
+  .msrdiv{
+      @apply form-control  w-full;
+  }
+  .msrdiv input{
+      @apply p-2  rounded-md  w-full border-[1px] bg-white  md:w-auto ;
+  }
+  
+  .msrone button{
+      @apply p-2  -ml-10   md:w-auto;
+  }
+  .msrone button img{
+      @apply h-6 w-6 ;
+  }
+  .msrbot {
+      @apply absolute mt-10 w-[100%] flex flex-col lg:hidden border-[1px] bg-white;
+  }
+  
+  .msrbotm{
+      @apply p-1  flex flex-row w-full justify-between items-center hover:bg-cyan-50 border-sky-100 border-[1px];
+  }
+  .msrid{
+      @apply flex flex-row;
+  }
+  
+  .msri{
+      @apply mr-1;
+  }
+  .msri img{
+      @apply w-[50px] h-[50px] object-cover;
+  }
+
+/* Focus: gradient border matching the login button (indigo -> sky -> emerald)
+   instead of the browser's black outline. Border grows 1px -> 2px, so padding
+   drops by 1px to keep the text from shifting. */
+.srdiv input:focus,
+.msrdiv input:focus {
+  outline: none;
+  border: 2px solid transparent;
+  padding: calc(0.5rem - 1px);
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #6366f1 20%, #0ea5e9 50%, #10b981 90%) border-box;
+}

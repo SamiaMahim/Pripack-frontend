@@ -1,0 +1,61 @@
+.lmain{
+    @apply hero;
+}
+
+.lhead{
+    @apply navbar flex justify-between   px-32 fixed top-0 left-0 right-0 z-10  shadow-sm;
+}
+.lhead div{
+    @apply items-center;
+}
+.lhead div img{
+    @apply w-24 lg:w-40 ml-2  opacity-100 ;
+}
+.lcont{
+    @apply hero-content flex-col flex justify-center mt-5 items-center ;
+}
+.lconts{
+    @apply hero-content flex-col flex justify-center mt-10 items-center ;
+}
+.ltit{
+    @apply text-3xl  p-3 rounded-md font-bold mt-4 sm:mt-8 text-black;
+}
+.lform{
+    @apply w-full max-w-[380px] mx-auto bg-white rounded-2xl  ;
+}
+.lform form{
+    @apply lg:p-4 rounded-md ;
+}
+
+.lform form div{
+    @apply form-control ;
+}
+
+.lform form div label{
+    @apply label ;
+}
+
+.lform form div label span{
+    @apply label-text text-black ;
+}
+.lform form div input[type='text'] {
+    @apply input input-bordered  w-full lg:w-[350px];
+}
+.lform form div select {
+    @apply input input-bordered  w-full lg:w-[350px];
+}
+.lform form div input[type='email'] {
+    @apply input input-bordered  w-full lg:w-[350px];
+}
+.lform form div input[type='phone'] {
+    @apply input input-bordered  w-full lg:w-[350px];
+}
+
+.lform form div input[type='password'] {
+    @apply input input-bordered  w-full lg:w-[350px];
+}
+.lform form > div > button {
+    @apply btn border-none  w-full lg:w-[350px]  bg-cyan-400 hover:bg-cyan-300 text-white;
+}
+
+

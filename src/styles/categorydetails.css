@@ -1,0 +1,22 @@
+/* Phones clear the taller header (logo row + search bar). */
+.catdmain{
+    @apply flex justify-between lg:flex-row flex-wrap mt-32 lg:mt-20;
+}
+
+.catdmain div{
+    @apply items-center w-full;
+}
+
+.catdmain div div{
+    @apply font-bold text-black text-2xl lg:text-4xl mt-3 flex items-center justify-start;
+}
+
+
+/* Phones show the whole cover at its own shape; desktop keeps the wide 4:1 banner. */
+.catdmain div img{
+    @apply w-full h-auto lg:aspect-[4/1] object-cover border rounded-2xl;
+}
+
+.pbut{
+    @apply absolute top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full;
+}
